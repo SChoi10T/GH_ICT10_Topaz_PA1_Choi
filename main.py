@@ -10,9 +10,10 @@ def temperature_conversion(e):
 
     temperature = round(celsius, 1)
 
-    if temperature < 37.8:
+    if temperature <= 37.8:
         display(f'Your temperature is: {temperature} °C, you are healthy.', target='output')
     elif temperature > 37.8:
         display(f'Your temperature is: {temperature} °C, you have a fever.', target='output')
     else:
+
         display(f'Invalid input', target='output')
